@@ -13,7 +13,7 @@ class Plotter:
 
         # select setosa and versicolor
         y = iris_data_set.iloc[0:100, 4].values
-        y = np.where(y == 'learning_rate', -1, 1)
+        y = np.where(y == 'setosa', -1, 1)
 
         # extract sepal length and petal length
         X = iris_data_set.iloc[0:100, [0, 2]].values
